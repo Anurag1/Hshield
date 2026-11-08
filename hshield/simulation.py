@@ -10,13 +10,14 @@ class EpisodeConfig:
     sensing_radius: int = 1
 
 class Simulation:
-    def __init__(self, infra, config=EpisodeConfig()):
+    def __init__(self, infra, config=EpisodeConfig(), expected_agents=12):
         self.infra, self.config = infra, config
+        self.expected_agents = expected_agents
 
     def run_episode(self, deployment, seed):
         rng = random.Random(seed)
         agents = make_agents(deployment.positions)
-        safety = SafetyPolicy(expected_agents=len(deployment.positions))
+        safety = SafetyPolicy(expected_agents=self.expected_agents)
         safety.validate_deployment(self.infra, deployment)
         true_events = detected_events = false_alerts = 0
         benign_observations = true_alerts = total_alerts = 0
