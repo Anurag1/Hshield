@@ -1,0 +1,6 @@
+Ran 9 tests in 0.052s
+
+OK
+
+Command:
+PYTHONPATH=. python -m unittest discover -s tests -v
