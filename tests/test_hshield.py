@@ -48,6 +48,11 @@ class HShieldTests(unittest.TestCase):
         self.assertEqual(policy.emit(True), "ADVISORY_ALERT")
         self.assertEqual(policy.emit(False), "NO_ALERT")
 
+    def test_simulation_rejects_wrong_configured_agent_count(self):
+        d = Deployment((1, 2), "invalid-size")
+        with self.assertRaises(ValueError):
+            Simulation(self.infra).run_episode(d, 1)
+
     def test_invalid_duplicate_positions_rejected(self):
         with self.assertRaises(ValueError):
             Deployment((1, 1), "invalid")
