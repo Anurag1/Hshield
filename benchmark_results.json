@@ -1,0 +1,92 @@
+{
+  "configuration": {
+    "agents": 12,
+    "episodes": 100,
+    "grid": [
+      6,
+      4
+    ],
+    "nodes": 24,
+    "seed": 20261108
+  },
+  "results": {
+    "degree": {
+      "episodes": 100,
+      "false_positive_rate": 0.056345238095238094,
+      "false_positive_rate_sd": 0.13955304349774497,
+      "mean_agents_per_node": 2.3333333333333335,
+      "positions": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        8,
+        9,
+        10,
+        13,
+        14,
+        15,
+        16
+      ],
+      "precision": 0.9415714285714286,
+      "precision_sd": 0.12689087746792713,
+      "recall": 0.8536904761904762,
+      "recall_sd": 0.17519000860678746,
+      "weighted_coverage": 0.9263351749539595,
+      "weighted_redundancy": 0.5257826887661142
+    },
+    "hshield": {
+      "episodes": 100,
+      "false_positive_rate": 0.05261904761904762,
+      "false_positive_rate_sd": 0.11891397260128263,
+      "mean_agents_per_node": 2.0833333333333335,
+      "positions": [
+        2,
+        4,
+        5,
+        6,
+        8,
+        11,
+        12,
+        15,
+        16,
+        19,
+        20,
+        22
+      ],
+      "precision": 0.9504523809523809,
+      "precision_sd": 0.11332830370992371,
+      "recall": 0.9784761904761905,
+      "recall_sd": 0.08034923770640268,
+      "weighted_coverage": 1,
+      "weighted_redundancy": 0.886279926335175
+    },
+    "random": {
+      "episodes": 100,
+      "false_positive_rate": 0.04136904761904762,
+      "false_positive_rate_sd": 0.1059815870661133,
+      "mean_agents_per_node": 2.2083333333333335,
+      "positions": [
+        0,
+        2,
+        6,
+        7,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        16,
+        17
+      ],
+      "precision": 0.9526428571428571,
+      "precision_sd": 0.1231368608822578,
+      "recall": 0.9182261904761905,
+      "recall_sd": 0.16367213706792294,
+      "weighted_coverage": 0.9567219152854511,
+      "weighted_redundancy": 0.6395027624309393
+    }
+  }
+}
