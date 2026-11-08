@@ -1,6 +1,9 @@
-Ran 9 tests in 0.052s
+Ran 10 tests in 0.051s
 
 OK
 
-Command:
+Verified locally with:
 PYTHONPATH=. python -m unittest discover -s tests -v
+
+Benchmark smoke run:
+PYTHONPATH=. python -m hshield.benchmark --episodes 100 --seed 20261108 --agents 12
