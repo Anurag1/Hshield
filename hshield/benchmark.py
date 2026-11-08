@@ -11,7 +11,7 @@ def run_benchmark(episodes=100, seed=20261108, n_agents=12):
     if episodes < 1:
         raise ValueError("episodes must be positive")
     infra = Infrastructure()
-    sim = Simulation(infra)
+    sim = Simulation(infra, expected_agents=n_agents)
     results = {}
     episode_seeds = [seed + i for i in range(episodes)]
     for strategy in STRATEGIES:
