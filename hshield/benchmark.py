@@ -44,7 +44,7 @@ def main():
     print(rendered)
     if args.output:
         with open(args.output, "w", encoding="utf-8") as f:
-            f.write(rendered + "\\n")
+            f.write(rendered + "\n")
 
 if __name__ == "__main__":
     main()
